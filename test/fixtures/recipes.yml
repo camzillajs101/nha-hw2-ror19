@@ -4,7 +4,7 @@ one:
   name: MyString
   difficulty: MyString
   cookingtime_seconds: 1
-  author: 
+  author: MyString
   totalprice_cents: 1
   ingredients: MyString
   photo: MyString
@@ -13,7 +13,7 @@ two:
   name: MyString
   difficulty: MyString
   cookingtime_seconds: 1
-  author: 
+  author: MyString
   totalprice_cents: 1
   ingredients: MyString
   photo: MyString

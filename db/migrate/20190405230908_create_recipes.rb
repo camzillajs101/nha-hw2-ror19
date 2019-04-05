@@ -4,7 +4,7 @@ class CreateRecipes < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :difficulty
       t.integer :cookingtime_seconds
-      t.name :author
+      t.string :author
       t.integer :totalprice_cents
       t.string :ingredients
       t.string :photo
