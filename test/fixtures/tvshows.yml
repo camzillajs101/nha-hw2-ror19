@@ -2,20 +2,20 @@
 
 one:
   name: MyString
-  type: 
+  showtype: MyString
   seasons: 1
-  startdate: 2019-04-05
-  enddate: 2019-04-05
+  startdate: 2019-04-06
+  enddate: 2019-04-06
   creator: MyString
   photo: MyString
-  episodecost_cents: 1
+  episodecost_dollars: 1
 
 two:
   name: MyString
-  type: 
+  showtype: MyString
   seasons: 1
-  startdate: 2019-04-05
-  enddate: 2019-04-05
+  startdate: 2019-04-06
+  enddate: 2019-04-06
   creator: MyString
   photo: MyString
-  episodecost_cents: 1
+  episodecost_dollars: 1
