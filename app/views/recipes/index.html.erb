@@ -4,6 +4,7 @@
     <th>Difficulty</th>
     <th>Author</th>
     <th>Image</th>
+    <th colspan="2"></th>
   </tr>
   <% @recipes.each do |f| %>
     <tr>
@@ -11,6 +12,8 @@
       <td><%= f.difficulty %></td>
       <td><%= f.author %></td>
       <td>image сука</td>
+      <td><%= link_to "Edit", edit_recipe_path(f.id) %></td>
+      <td><%= link_to "Delete", recipe_path(f.id), method: :delete %></td>
     </tr>
   <% end %>
 </table>

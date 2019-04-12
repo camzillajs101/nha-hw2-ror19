@@ -26,3 +26,11 @@
 #recipes_index tr:nth-child(even) {
   background-color: #dddddd;
 }
+a {
+  text-decoration: none;
+  color: #4186ff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #42aaff;
+}
