@@ -1,0 +1,16 @@
+<table id="recipes_index">
+  <tr>
+    <th>Name</th>
+    <th>Difficulty</th>
+    <th>Author</th>
+    <th>Image</th>
+  </tr>
+  <% @recipes.each do |f| %>
+    <tr>
+      <td><%= link_to f.name, recipe_path(f.id) %></td>
+      <td><%= f.difficulty %></td>
+      <td><%= f.author %></td>
+      <td>image сука</td>
+    </tr>
+  <% end %>
+</table>

@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+* {
+  font-family: Comic Sans MS;
+}
+#recipes_index {
+  border-collapse: collapse;
+}
+#recipes_index td, th {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+#recipes_index tr:nth-child(even) {
+  background-color: #dddddd;
+}
