@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   resources :recipes
   resources :tvshows
+  root 'welcome#hello'
 end

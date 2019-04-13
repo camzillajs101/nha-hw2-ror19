@@ -1,0 +1,12 @@
+<h1><%= @tvshow.name %></h1>
+<%= link_to "Previous", tvshow_path(@tvshow.id - 1) %>&nbsp;&nbsp;
+<%= link_to "All Shows", tvshows_path %>&nbsp;&nbsp;
+<%= link_to "Next", tvshow_path(@tvshow.id + 1) %>
+<h3><%= @tvshow.showtype %><br>Created by <%= @tvshow.creator %></h3>
+<ul>
+  <li><%= @tvshow.seasons %> seasons have been made</li>
+  <li>Started <%= @tvshow.startdate %></li>
+  <li>Ended <%= @tvshow.enddate %></li>
+  <li>Each episode costs about $<%= @tvshow.episodecost_dollars %></li>
+</ul>
+<%= image_tag @tvshow.photo %><br>

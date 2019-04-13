@@ -1,7 +1,7 @@
 <h1><%= @recipe.name %></h1>
+<%= link_to "Previous", recipe_path(@recipe.id - 1) %>&nbsp;&nbsp;
 <%= link_to "All Recipes", recipes_path %>&nbsp;&nbsp;
-<%= link_to "Next", recipe_path(@recipe.id + 1) %>&nbsp;&nbsp;
-<%= link_to "Previous", recipe_path(@recipe.id - 1) %>
+<%= link_to "Next", recipe_path(@recipe.id + 1) %>
 <h3>By <%= @recipe.author %></h3>
 <ul>
   <li>Difficulty level <%= @recipe.difficulty %> (<%= convert_difficulty(@recipe.difficulty) %>)</li>

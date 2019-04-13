@@ -5,11 +5,11 @@ class RecipesController < ApplicationController
 
   def show
     @recipe = Recipe.find(params[:id])
-    @ingredients = @recipe.ingredients.split
+    @ingredients = @recipe.ingredients.split('|')
   end
 
   def destroy
     Recipe.find(params[:id]).destroy
-    redirect_to "/recipes"
+    redirect_to recipes_path
   end
 end
