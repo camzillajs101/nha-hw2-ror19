@@ -1,3 +1,4 @@
+<h1>Recipes</h1>
 <table id="recipes_index">
   <tr>
     <th>Name</th>
@@ -9,10 +10,9 @@
   <% @recipes.each do |f| %>
     <tr>
       <td><%= link_to f.name, recipe_path(f.id) %></td>
-      <td><%= f.difficulty %></td>
+      <td><%= convert_difficulty(f.difficulty) %></td>
       <td><%= f.author %></td>
-      <td>image сука</td>
-      <td><%= link_to "Edit", edit_recipe_path(f.id) %></td>
+      <td><%= image_tag f.photo %></td>
       <td><%= link_to "Delete", recipe_path(f.id), method: :delete %></td>
     </tr>
   <% end %>

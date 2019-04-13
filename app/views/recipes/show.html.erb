@@ -1,8 +1,17 @@
 <h1><%= @recipe.name %></h1>
-By <%= @recipe.author %>
-<%= @recipe. %>
-<%= @recipe. %>
-<%= @recipe. %>
-<%= @recipe. %>
-<%= @recipe. %>
-<%= @recipe. %>
+<%= link_to "All Recipes", recipes_path %>&nbsp;&nbsp;
+<%= link_to "Next", recipe_path(@recipe.id + 1) %>&nbsp;&nbsp;
+<%= link_to "Previous", recipe_path(@recipe.id - 1) %>
+<h3>By <%= @recipe.author %></h3>
+<ul>
+  <li>Difficulty level <%= @recipe.difficulty %> (<%= convert_difficulty(@recipe.difficulty) %>)</li>
+  <li>Takes about <%= @recipe.cookingtime_seconds / 60 %> minutes to make</li>
+  <li>Costs $<%= (@recipe.price_cents.to_f / 100).round(2) %></li>
+</ul>
+<h3>Ingredients (<%= @ingredients.length %>)</h3>
+<ol>
+  <% @ingredients.each do |i| %>
+    <li><%= i %></li>
+  <% end %>
+</ol>
+<%= image_tag @recipe.photo %><br>
