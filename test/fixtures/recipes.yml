@@ -2,18 +2,18 @@
 
 one:
   name: MyString
-  difficulty: MyString
-  cookingtime_seconds: 1
+  difficulty: 1
   author: MyString
+  cookingtime_seconds: 1
   price_cents: 1
   ingredients: MyString
   photo: MyString
 
 two:
   name: MyString
-  difficulty: MyString
-  cookingtime_seconds: 1
+  difficulty: 1
   author: MyString
+  cookingtime_seconds: 1
   price_cents: 1
   ingredients: MyString
   photo: MyString
