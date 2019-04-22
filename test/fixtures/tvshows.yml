@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  showtype: MyString
+  seasons: 1
+  startdate: 2019-04-06
+  enddate: 2019-04-06
+  creator: MyString
+  photo: MyString
+  episodecost_dollars: 1
+
+two:
+  name: MyString
+  showtype: MyString
+  seasons: 1
+  startdate: 2019-04-06
+  enddate: 2019-04-06
+  creator: MyString
+  photo: MyString
+  episodecost_dollars: 1

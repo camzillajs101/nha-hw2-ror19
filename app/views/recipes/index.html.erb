@@ -1,0 +1,22 @@
+<h1>Recipes</h1>
+<%= link_to "Go to TV Shows", tvshows_path %><br><br>
+<table id="recipes_index" class="index">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Difficulty</th>
+    <th>Author</th>
+    <th>Image</th>
+    <th></th>
+  </tr>
+  <% @recipes.each do |f| %>
+    <%= content_tag :tr, id: "recipe-#{f.id}" do %>
+      <td><%= f.id %></td>
+      <td><%= link_to f.name, recipe_path(f.id) %></td>
+      <td><%= convert_difficulty(f.difficulty) %></td>
+      <td><%= f.author %></td>
+      <td><%= image_tag f.photo %></td>
+      <td><%= link_to "Delete", recipe_path(f.id), method: :delete %></td>
+    <% end %>
+  <% end %>
+</table>
