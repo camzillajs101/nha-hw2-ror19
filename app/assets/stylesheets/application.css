@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+* {
+  font-family: Comic Sans MS;
+}
+.index {
+  border-collapse: collapse;
+}
+.index td, .index th {
+  padding: 8px;
+  border: 1px solid #dddddd;
+}
+.index tr:nth-child(even) {
+  background-color: #dddddd;
+}
+a {
+  text-decoration: none;
+  color: #4186ff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #42aaff;
+}
+img {
+  height: 300px;
+  width: auto;
+}
+td img {
+  width: 50px;
+  height: auto;
+}
